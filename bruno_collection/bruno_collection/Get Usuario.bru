@@ -1,0 +1,15 @@
+meta {
+  name: Get Usuario
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://127.0.0.1:8000/api/user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NTY0MzUzLCJleHAiOjE3NDc1Njc5NTMsIm5iZiI6MTc0NzU2NDM1MywianRpIjoibE91SjRMWkpiRFgyOVRFQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6bnVsbH0.0JswCT-1l5x9U3r53EuxhjeULYti3QTIqPBf4z5Fi8c
+}

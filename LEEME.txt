@@ -1,0 +1,9 @@
+Extraer car-app.zip y ejecutar los siguientes comandos en un terminal sobre el directorio: 
+
+- composer install 
+- php artisan migrate
+- php artisan serve
+
+Comprueba en el navegador esta url http://localhost:8000/api/hello
+
+Si se carga correctamente, desconectate de internet y pide el enunciado del examen.

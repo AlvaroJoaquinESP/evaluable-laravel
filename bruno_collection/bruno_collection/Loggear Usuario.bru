@@ -1,0 +1,18 @@
+meta {
+  name: Loggear Usuario
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://127.0.0.1:8000/api/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email" : "cipri@alu.murciaeduca.es",
+    "password" : "Cipriano"
+  }
+}
