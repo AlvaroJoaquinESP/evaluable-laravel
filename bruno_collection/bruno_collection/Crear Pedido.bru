@@ -1,15 +1,24 @@
 meta {
-  name: Loggout
+  name: Crear Pedido
   type: http
-  seq: 9
+  seq: 1
 }
 
 post {
-  url: https://evaluable-laravel.vercel.app/api/api/logout
+  url: https://evaluable-laravel.vercel.app/api/api/createOrder
   body: json
   auth: bearer
 }
 
 auth:bearer {
   token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZXZhbHVhYmxlLWxhcmF2ZWwudmVyY2VsLmFwcC9hcGkvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NjcwMzg3LCJleHAiOjE3NDc2NzM5ODcsIm5iZiI6MTc0NzY3MDM4NywianRpIjoiR1FUcjVpenpmVFFOTWlLQiIsInN1YiI6IjQiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3Iiwicm9sZSI6bnVsbH0.ZDI8PtleXjl1JiG-1Lg5JdzXQ6Gp7b8dIK8amBM3VtE
+}
+
+body:json {
+  {
+    "sale_date" : "2025-01-11",
+    "amount":"99999",
+    "articles_id":"7445",
+    "client_id":"1"
+  }
 }

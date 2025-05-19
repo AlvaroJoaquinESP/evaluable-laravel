@@ -1,12 +1,12 @@
 meta {
-  name: Loggout
+  name: Lista Pedidos Cliente
   type: http
-  seq: 9
+  seq: 2
 }
 
-post {
-  url: https://evaluable-laravel.vercel.app/api/api/logout
-  body: json
+get {
+  url: https://evaluable-laravel.vercel.app/api/api/getAllByID/1
+  body: none
   auth: bearer
 }
 
